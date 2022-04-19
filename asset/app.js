@@ -91,7 +91,7 @@ CarLinks.forEach((CarLink, index) => {
 		}else if (index === 3) {
 			header.style.backgroundImage = "url('asset/images/image-4.png')";
 		}else if(index === 4) {
-			header.style.backgroundImage = "url('asset/images/cbl.jpg')";	
+			header.style.backgroundImage = "url('asset/images/cbp.jpg')";	
 		} else {
 			header.style.backgroundImage = "url('asset/images/image-1.png')";
 		}

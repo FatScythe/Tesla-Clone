@@ -23,6 +23,7 @@ header {
 	background-repeat: no-repeat;
 	background-blend-mode: multiply;
 	background-position: center;
+	transition: background-image 0.8s;
 }
 
 nav {
@@ -107,9 +108,6 @@ nav .btn {
 }
 
 @media screen and (max-width: 768px) {
-	* {
-		/*display: none;*/
-	}
 
 	header {
 		padding: 0;
@@ -158,10 +156,10 @@ nav .btn {
 
 	nav div .close {
 		display: block;
-		width: 20px;
-		height: 20px;
+		width: 30px;
+		height: 30px;
 		float: left;
-		margin: 10px 20px;
+		margin: 10px 10px;
 		cursor: pointer;
 		z-index: 3;
 	}
@@ -192,8 +190,6 @@ nav .btn {
 	nav ul li a:hover::after {
 		width: 0;
 	}
-
-	/*.info:not(:last-child)*/
 
 	.info {
 	padding: 0 5%;

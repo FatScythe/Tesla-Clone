@@ -1,17 +1,17 @@
-> ### Tesla site clone
+### Tesla site clone
 
 #### Link to the live website:
-[Tesla clone](https://weblifyhost.netlify.app/ "weblify live site")
+[Tesla clone](https://fatscythe.github.io/Tesla-Clone"TeslaClone live site")
 ___
 
 #### Description : Tesla clone is a dynamic web site, it uses the DOM to change the content of the page when the links are being clicked, it is responsive
 ____
 
-#### Tech Used : Html, CSS, git, github, Netlify.
+#### Tech Used : Html, CSS, git, github.
 ___
 
 #### What i learned:
-> #### Using index parameter to query the objects in array, such that when a linked is clicked it change the content of the webpage
+#### Using index parameter to query the objects in array, such that when a linked is clicked it change the content of the webpage
 
 ```JavaScript
 const teslaCars = [
@@ -69,4 +69,13 @@ ___
 #### Design image :
 
 #### Desktop View
-![Weblify SS](design/DesktopView.png "Desktop View")
+![Tesla-Clone SS](asset/image/teslaClone.png "Desktop View")
+___
+
+#### Future Feature :
+1. Animate numeric info
+1. Change background images based on the media query using Js
+
+
+#### Credits
+Easy Tutorial
