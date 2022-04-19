@@ -1,7 +1,8 @@
 ### Tesla site clone
 
 #### Link to the live website:
-[Tesla clone](https://fatscythe.github.io/Tesla-Clone"TeslaClone live site")
+[Tesla clone](https://fatscythe.github.io/Tesla-Clone/"TeslaClonelivesite")
+
 ___
 
 #### Description : Tesla clone is a dynamic web site, it uses the DOM to change the content of the page when the links are being clicked, it is responsive
@@ -69,7 +70,7 @@ ___
 #### Design image :
 
 #### Desktop View
-![Tesla-Clone SS](asset/image/teslaClone.png "Desktop View")
+![Tesla-Clone SS](asset/images/teslaClone.png "Desktop View")
 ___
 
 #### Future Feature :
