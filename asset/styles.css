@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: 'Poppins', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+header {
+	padding: 0 3%;
+	height: 100vh;
+	background-image: url('images/image-1.png');
+	background-color: rgba(0, 0, 0, 0.2);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	background-position: center;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav .logo {
+	width: 200px;
+}
+
+nav div {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+
+nav ul li {
+	position: relative;
+	display: inline-block;
+	padding: 0 5px;
+}
+
+nav ul li a::after {
+	position: absolute;
+	bottom: -10px;
+	width: 0;
+	right: 0;
+	content: '';
+	height: 2px;
+	background-color: #fff;
+	border-radius: 4px;
+	transition: 0.5s width;
+}
+
+nav ul li a:hover::after {
+	width: 100%;
+}
+
+nav .menu {
+	display: none;
+}
+
+nav div img {
+	display: none;
+}
+
+nav .btn {
+	border: 1px solid #fff;
+	border-radius: 20px;
+	padding: 10px 15px;
+}
+
+.info {
+	padding: 0 5%;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	bottom: 50px;
+	left: 0;
+	width: 100%;
+	color: #fff;
+}
+
+.info div {
+	margin: 0 20px;
+}
+
+.info div h2 {
+	font-size: 44px;
+	font-weight: 400;
+}
+
+.info .line {
+	flex: 1;
+	height: 4px;
+	border-radius: 4px;
+	background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+	* {
+		/*display: none;*/
+	}
+
+	header {
+		padding: 0;
+		background-image: url('images/model S portrait.jpeg');
+	}
+
+	header .menu {
+		display: block;
+		margin: 4% 4%;
+		border: 0;
+		padding: 10px 20px;
+		font-size: 16px;
+		border-radius: 20px;
+		background: rgba(255, 255, 255, 0.2);
+		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+		-webkit-backdrop-filter: blur(4px);
+		backdrop-filter: blur(4px);
+		font-weight: bold;
+		cursor: pointer;
+
+	}
+
+	nav {
+		align-items: flex-start;		
+		position: relative;
+	}
+
+	nav .logo {
+		padding: 2% 2%;
+		width: 200px;
+	}
+	
+	nav div {
+		display: block;
+		position: absolute;
+		width: 50%;
+		top: 0;
+		right: -400px;
+		padding-left: 20px;
+		background: #fff;
+		height: 100vh;
+		z-index: 2;
+		box-shadow: 0px 5px 2px blue;
+		transition: 0.5s ease-in-out ;
+	}
+
+	nav div .close {
+		display: block;
+		width: 20px;
+		height: 20px;
+		float: left;
+		margin: 10px 20px;
+		cursor: pointer;
+		z-index: 3;
+	}
+
+	nav ul {
+		margin-top: 40px;
+	}
+
+	nav ul li {
+		display: block;
+		padding: 10px;
+	}
+
+	nav ul li a {
+		cursor: pointer;
+		color: #000;
+	}
+
+	nav .btn {
+		cursor: pointer;
+		padding:  5px 10px;
+		color: #000;
+		position: fixed;
+		bottom: 10px;
+		border-color: #000;
+	}
+
+	nav ul li a:hover::after {
+		width: 0;
+	}
+
+	/*.info:not(:last-child)*/
+
+	.info {
+	padding: 0 5%;
+	display: block;
+	}
+
+	.info div {
+		margin: 5% 0;
+	}
+
+	.info div h2 {
+		font-size: 14px;
+		font-weight: 400;
+	}
+
+	.info .line {
+		width: 50%;
+		border-radius: 4px;
+	}
+
+	.info div:last-child h2 {
+		font-size: 30px;
+	}
+
+}
