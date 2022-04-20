@@ -33,24 +33,6 @@ const info = document.querySelector('.info');
 const header = document.querySelector('header');
 const tabQuery = window.matchMedia("(max-width : 768px)");
 // const desktopQuery = window.matchMedia("(max-width : 1500px)");
-// console.log()
-
-
-// Animating the numerical info 
-let output = 0;
-			
-let timer = setInterval(() => {
-
-				if(output === teslaCars[1].maxRange) {
-					clearInterval(timer);
-				} else {
-					output++;	
-					return output;
-				}
-			}, 10);
-let numeral = timer;
-console.log(numeral)
-// console.log(timer)
 
 // Sliding Menu
 showMenu = () => {
@@ -117,6 +99,7 @@ CarLinks.forEach((CarLink, index) => {
 
 
 
+// Media Query
 
 		// if(index === 1 || tabQuery.matches) {
 		// 	header.style.backgroundImage = "url('asset/images/model 3 p.jpeg')";
@@ -148,3 +131,21 @@ CarLinks.forEach((CarLink, index) => {
 // }
 
 // mediaQuery.addEventListener(query);
+
+
+
+// Animating the numerical info 
+// let output = 0;
+			
+// let timer = setInterval(() => {
+
+// 				if(output === teslaCars[1].maxRange) {
+// 					clearInterval(timer);
+// 				} else {
+// 					output++;	
+// 					return output;
+// 				}
+// 			}, 10);
+// let numeral = timer;
+// console.log(numeral)
+// console.log(timer)

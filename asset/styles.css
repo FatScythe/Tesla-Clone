@@ -13,21 +13,21 @@ a {
 	color: #fff;
 }
 
-
 header {
-	padding: 0 3%;
 	height: 100vh;
+	padding: 0 3%;
 	background-image: url('images/image-1.png');
 	background-color: rgba(0, 0, 0, 0.2);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-blend-mode: multiply;
 	background-position: center;
-	transition: background-image 0.8s;
+	transition: background-image 0.6s;
 }
 
-header nav button .menu {
+header button {
 	display: none;
+	/*visibility: hidden;*/
 }
 
 nav {
@@ -92,7 +92,7 @@ nav .btn {
 }
 
 .info div {
-	margin: 0 20px;
+	padding: 0 20px;
 }
 
 .info div h2 {
@@ -112,14 +112,18 @@ nav .btn {
 	header {
 		padding: 0;
 		background-image: url('images/model S portrait.jpeg');
-		position: relative;
-		max-width: 100%;
+		position: fixed;
+		height: 100vh;
+		width: 100vw;
+	}
+
+	header nav {
+		padding: 10px 5px;
 	}
 
 	header nav .menu {
 		display: none;
 		display: block;
-		margin: 4% 4%;
 		border: 0;
 		padding: 10px 20px;
 		font-size: 16px;
@@ -139,7 +143,6 @@ nav .btn {
 	}
 
 	nav .logo {
-		padding: 2% 2%;
 		width: 200px;
 	}
 	
@@ -161,18 +164,19 @@ nav .btn {
 		display: block;
 		width: 30px;
 		height: 30px;
-		margin: 10px 10px;
+		margin: 10px 0 0;
 		cursor: pointer;
 		z-index: 2;
 	}
 
 	nav ul {
-		margin-top: 40px;
+		padding-top: 20px;
 	}
 
 	nav ul li {
 		display: block;
 		padding: 10px;
+		text-align: center;
 	}
 
 	nav ul li a {
@@ -185,7 +189,7 @@ nav .btn {
 		padding:  5px 10px;
 		color: #000;
 		position: fixed;
-		bottom: 10px;
+		bottom: 40px;
 		border-color: #000;
 	}
 
@@ -201,16 +205,17 @@ nav .btn {
 	}
 
 	.info div {
-		margin: 20px 0;
+		padding: 20px 0;
 	}
 
 	.info div h2 {
-		font-size: 14px;
+		font-size: 18px;
 		font-weight: 400;
 	}
 
 	.info .line {
 		width: 50%;
+		padding: 0;
 		border-radius: 4px;
 	}
 
