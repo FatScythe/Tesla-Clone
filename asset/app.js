@@ -87,7 +87,7 @@ CarLinks.forEach((CarLink, index) => {
 		}else if (index === 3) {
 			header.style.backgroundImage = "url('asset/images/image-4.png')";
 		}else if(index === 4) {
-			header.style.backgroundImage = "url('asset/images/cbp.jpg')";	
+			header.style.backgroundImage = "url('asset/images/cbp.jpg')";
 		} else {
 			header.style.backgroundImage = "url('asset/images/image-1.png')";
 		}
@@ -139,13 +139,11 @@ CarLinks.forEach((CarLink, index) => {
 			
 // let timer = setInterval(() => {
 
-// 				if(output === teslaCars[1].maxRange) {
+// 				if(output === 350) {
 // 					clearInterval(timer);
 // 				} else {
 // 					output++;	
-// 					return output;
 // 				}
 // 			}, 10);
-// let numeral = timer;
-// console.log(numeral)
-// console.log(timer)
+
+// console.log(output);
