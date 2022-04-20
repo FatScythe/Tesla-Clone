@@ -26,6 +26,10 @@ header {
 	transition: background-image 0.8s;
 }
 
+header nav button .menu {
+	display: none;
+}
+
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -64,10 +68,6 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
 	width: 100%;
-}
-
-nav .menu {
-	display: none;
 }
 
 nav div img {
@@ -112,9 +112,12 @@ nav .btn {
 	header {
 		padding: 0;
 		background-image: url('images/model S portrait.jpeg');
+		position: relative;
+		max-width: 100%;
 	}
 
-	header .menu {
+	header nav .menu {
+		display: none;
 		display: block;
 		margin: 4% 4%;
 		border: 0;
@@ -145,7 +148,7 @@ nav .btn {
 		position: absolute;
 		width: 50%;
 		top: 0;
-		right: -400px;
+		right: -50%;
 		padding-left: 20px;
 		background: #fff;
 		height: 100vh;
@@ -158,10 +161,9 @@ nav .btn {
 		display: block;
 		width: 30px;
 		height: 30px;
-		float: left;
 		margin: 10px 10px;
 		cursor: pointer;
-		z-index: 3;
+		z-index: 2;
 	}
 
 	nav ul {
@@ -193,11 +195,13 @@ nav .btn {
 
 	.info {
 	padding: 0 5%;
+	position: absolute;
+	bottom: 0;
 	display: block;
 	}
 
 	.info div {
-		margin: 5% 0;
+		margin: 20px 0;
 	}
 
 	.info div h2 {

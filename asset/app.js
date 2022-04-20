@@ -25,7 +25,6 @@ const teslaCars = [
 	 time: 6.5	
 	}
 ];
-
 const menuBlock = document.querySelector('nav div');
 const menuBtn = document.querySelector('header .menu');
 const cancelBtn = document.querySelector('nav div .close');
@@ -37,7 +36,21 @@ const tabQuery = window.matchMedia("(max-width : 768px)");
 // console.log()
 
 
+// Animating the numerical info 
+let output = 0;
+			
+let timer = setInterval(() => {
 
+				if(output === teslaCars[1].maxRange) {
+					clearInterval(timer);
+				} else {
+					output++;	
+					return output;
+				}
+			}, 10);
+let numeral = timer;
+console.log(numeral)
+// console.log(timer)
 
 // Sliding Menu
 showMenu = () => {
@@ -47,7 +60,7 @@ showMenu = () => {
 }
 
 hideMenu = () => {
-	menuBlock.style.right = '-400px';
+	menuBlock.style.right = '-50%';
 	menuBtn.style.display = 'block';
 }
 
@@ -56,25 +69,26 @@ CarLinks.forEach((CarLink, index) => {
 	CarLink.addEventListener('click', e => {
 		// let index = 1;
 
-		let carInfo = `<div>
-				<h2>${teslaCars[index].time}s</h2>
-				<p>0-62 mph</p>
-			</div>
-
+		let carInfo = `
 			<div>
-				<h2>${teslaCars[index].topSpeed} mph</h2>
-				<p>Top Speed</p>
-			</div>
+					<h2>${teslaCars[index].time}s</h2>
+					<p>0-62 mph</p>
+				</div>
 
-			<div>
-				<h2>${teslaCars[index].maxRange} mi</h2>
-				<p>Max Range</p>
-			</div>
+				<div>
+					<h2>${teslaCars[index].topSpeed} mph</h2>
+					<p>Top Speed</p>
+				</div>
 
-			<div class="line"></div>
+				<div>
+					<h2>${teslaCars[index].maxRange} mi</h2>
+					<p>Max Range</p>
+				</div>
 
-			<div>
-				<h2>${teslaCars[index].name}</h2>
+				<div class="line"></div>
+
+				<div>
+					<h2>${teslaCars[index].name}</h2>
 			</div>`;
 		
 

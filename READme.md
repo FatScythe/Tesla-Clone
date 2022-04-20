@@ -1,18 +1,18 @@
 ### Tesla site clone
 
 #### Link to the live website:
-[Tesla clone](https://fatscythe.github.io/Tesla-Clone/"TeslaClonelivesite")
+[Tesla Clone](https://fatscythe.github.io/Tesla-Clone/ "Tesla Clone live site")
 
 ___
 
-#### Description : Tesla clone is a dynamic web site, it uses the DOM to change the content of the page when the links are being clicked, it is responsive
+#### Description : Tesla clone is a dynamic web site, it uses the DOM to change the content of the page when the links are being clicked, it is also responsive.
 ____
 
-#### Tech Used : Html, CSS, git, github.
+#### Tech Used : Html, CSS, Js, git, github.
 ___
 
 #### What i learned:
-#### Using index parameter to query the objects in array, such that when a linked is clicked it change the content of the webpage
+#### Using index parameter to query the objects in an array, such that when a linked is clicked it changes the content of the webpage.
 
 ```JavaScript
 const teslaCars = [
