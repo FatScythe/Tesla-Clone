@@ -64,7 +64,12 @@ let carInfo = `<div>
 				<h2>${teslaCars[index].name}</h2>
 			</div>`;
 ```
-
+```CSS
+	.info div h2:hover {
+		color: transparent;
+		-webkit-text-stroke: #fff .5px;
+	}
+```
 ___
 
 #### Design image :

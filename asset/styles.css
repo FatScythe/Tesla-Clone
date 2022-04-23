@@ -98,6 +98,12 @@ nav .btn {
 .info div h2 {
 	font-size: 44px;
 	font-weight: 400;
+	cursor: pointer;
+}
+
+.info div h2:hover {
+	color: transparent;
+	-webkit-text-stroke: #fff .5px;
 }
 
 .info .line {
